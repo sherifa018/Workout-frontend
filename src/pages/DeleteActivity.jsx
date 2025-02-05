@@ -20,7 +20,7 @@ const DeleteActivity = () => {
   const { id } = useParams();
   const handleDeleteActivity = () => {
     axios
-      .delete(`http://localhost:3000/Workouts/${id}`)
+      .delete(`https://workout-backend-1-2.onrender.com/Workouts/${id}`)
       .then(() => {
         enqueueSnackbar("Activity Deleted successfully");
         nav("/home");

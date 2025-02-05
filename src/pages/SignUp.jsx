@@ -2,7 +2,6 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-
 const SignUp = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -14,7 +13,7 @@ const SignUp = () => {
       return;
     }
     axios
-      .post("http://localhost:3000/user/signup", {
+      .post("https://workout-backend-1-2.onrender.com/user/signup", {
         username,
         email,
         password,

@@ -13,7 +13,10 @@ const Login = () => {
       return;
     }
     axios
-      .post("http://localhost:3000/user/login", { username, password })
+      .post("https://workout-backend-1-2.onrender.com/user/login", {
+        username,
+        password,
+      })
       .then((response) => {
         const { username } = response.data;
         //  Local Storage

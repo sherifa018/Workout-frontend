@@ -16,7 +16,7 @@ const Home = () => {
 
   const getAllWorkout = async () => {
     axios
-      .get("http://localhost:3000/workouts/")
+      .get("https://workout-backend-1-2.onrender.com/workouts/")
       .then((res) => {
         console.log(res.data.workouts);
 
